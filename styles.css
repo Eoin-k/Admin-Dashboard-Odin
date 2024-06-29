@@ -1,0 +1,121 @@
+:root{
+--primary: rgba(130, 4, 255, 1);
+--bg-gradient: linear-gradient(90deg, rgba(22, 20, 44, 1) 0%, rgba(22, 20, 44, 1) 50%, rgba(22, 20, 44, 0.78) 100%);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 1em;
+    background: rgb(224, 224, 224);
+}
+
+.main-wrapper{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: var(--bg-gradient)
+}
+
+.btn-primary{
+background-color: var(--primary);
+padding: 1em 1.5em;
+border-radius: 1em;
+}   
+
+.sidebar {
+    padding: 2rem 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: end;
+    background-color: #171717;
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.body-wrapper{
+    grid-column-start: 2;
+    grid-column-end: end;   
+}
+
+ul{
+    padding: 0;
+}
+
+li::marker{
+    content: "";
+}
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: self-end;
+}
+
+.icon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.search-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    stroke: #171717;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu-wrapper{
+    display: flex;
+    justify-items: flex-start;
+}
+
+.menu-wrapper-inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: end;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: end;
+}
